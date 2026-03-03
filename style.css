@@ -1910,7 +1910,7 @@ footer .logo img {
   .service-item .about-number {
     right: -10px;
     text-align: right;
-    top: -35px;
+    top: -5px;
     font-size: 100px;
   }
   .services,
@@ -1926,6 +1926,7 @@ footer .logo img {
   }
   .rblock-content {
     max-width: 360px;
+    margin: auto;
   }
   .faq .title {
     font-size: 25px;
@@ -1958,9 +1959,32 @@ footer .logo img {
     width: 300px;
     margin: 0 auto 0;
   }
+  .rblock-slide {
+    flex: 0 0 100%;
+  }
+
+  .service-item {
+    padding-top: 45px;
+  }
 }
 
 .modal-content p {
   color: #444;
   line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .rblock-carousel {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .rblock-track {
+    display: flex;
+  }
+
+  .rblock-slide {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+  }
 }
